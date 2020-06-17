@@ -1,5 +1,7 @@
 # SMAP Data Visualization
 
+![](img/header-img.png)
+
 This notebook contains a Python script that demonstrates how to read and plot data from NASA's SMAP satellite.
 
 Fork, clone, and go nuts!
