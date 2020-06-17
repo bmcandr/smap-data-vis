@@ -8,5 +8,3 @@ dependencies:
   - numpy
   - basemap
   - basemap-data-hires
-prefix: /Users/brendanmcandrew/miniconda3/envs/smap-vis-env
-
