@@ -1,0 +1,12 @@
+name: smap-vis-env
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - matplotlib
+  - jupyter
+  - numpy
+  - basemap
+  - basemap-data-hires
+prefix: /Users/brendanmcandrew/miniconda3/envs/smap-vis-env
+
