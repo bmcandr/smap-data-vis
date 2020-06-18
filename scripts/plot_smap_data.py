@@ -151,7 +151,11 @@ def calc_mean_dataset(data_paths: list, dataset_name: str):
         dataset, meta, desc = read_dataset(data_path, dataset_name)
         datasets.append(dataset)
 
-    return np.dstack(datasets), meta, desc
+    stacked_datasets = np.dstack(datasets)
+
+    mean_data = np.nanmean(stacked_datasets, axis=2)
+
+    return mean_data, meta, desc
 
 
 def plot_data(data: np.ndarray, \
@@ -208,8 +212,7 @@ def test_plot_mean():
     Test plotting mean of all soil moisture datasets
     '''
 
-    test_dataset, test_meta, test_desc = calc_mean_dataset(DATA_PATHS, SM_DATASET_NAME)
-    mean_sm = np.nanmean(test_dataset, axis=2)
-    plot_data(mean_sm, SM_DATASET_NAME, test_desc)
+    mean_sm, meta, desc = calc_mean_dataset(DATA_PATHS, SM_DATASET_NAME)
+    plot_data(mean_sm, SM_DATASET_NAME, desc)
 
 test_plot_mean()
