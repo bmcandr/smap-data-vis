@@ -6,7 +6,6 @@ dependencies:
   - matplotlib
   - jupyter
   - numpy
-  - basemap
-  - basemap-data-hires
   - h5py
   - rasterio
+  - cartopy
