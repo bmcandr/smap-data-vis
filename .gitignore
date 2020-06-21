@@ -1,3 +1,5 @@
 .DS_store
 data/output
+data/input/SMAP/SPL3SMP.005/*
+!data/input/SMAP/SPL3SMP.005/2017.03.0[1-7]/
 .vscode
