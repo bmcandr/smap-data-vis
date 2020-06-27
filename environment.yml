@@ -11,3 +11,5 @@ dependencies:
   - cartopy
   - pandas
   - geopandas
+  - xarray
+
